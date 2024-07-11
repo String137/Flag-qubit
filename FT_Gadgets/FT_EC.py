@@ -95,7 +95,181 @@ def non_FT_EC(qc,q,syn,csyn):
     Unflagged_X_syn(qc,q,[3,4,5,6],syn,csyn[3])
     Unflagged_X_syn(qc,q,[1,2,5,6],syn,csyn[4])
     Unflagged_X_syn(qc,q,[0,2,4,6],syn,csyn[5])
-    image.png
+    with qc.if_test((csyn,0b000100)):
+        qc.x(0)
+    with qc.if_test((csyn,0b000010)):
+        qc.x(1)
+    with qc.if_test((csyn,0b000110)):
+        qc.x(2)
+    with qc.if_test((csyn,0b000001)):
+        qc.x(3)
+    with qc.if_test((csyn,0b000101)):
+        qc.x(4)
+    with qc.if_test((csyn,0b000011)):
+        qc.x(5)
+    with qc.if_test((csyn,0b000111)):
+        qc.x(6)
+    with qc.if_test((csyn,0b100000)):
+        qc.z(0)
+    with qc.if_test((csyn,0b100100)):
+        qc.x(0)
+        qc.z(0)
+    with qc.if_test((csyn,0b100010)):
+        qc.x(1)
+        qc.z(0)
+    with qc.if_test((csyn,0b100110)):
+        qc.x(2)
+        qc.z(0)
+    with qc.if_test((csyn,0b100001)):
+        qc.x(3)
+        qc.z(0)
+    with qc.if_test((csyn,0b100101)):
+        qc.x(4)
+        qc.z(0)
+    with qc.if_test((csyn,0b100011)):
+        qc.x(5)
+        qc.z(0)
+    with qc.if_test((csyn,0b100111)):
+        qc.x(6)
+        qc.z(0)
+    with qc.if_test((csyn,0b010000)):
+        qc.z(1)
+    with qc.if_test((csyn,0b010100)):
+        qc.x(0)
+        qc.z(1)
+    with qc.if_test((csyn,0b010010)):
+        qc.x(1)
+        qc.z(1)
+    with qc.if_test((csyn,0b010110)):
+        qc.x(2)
+        qc.z(1)
+    with qc.if_test((csyn,0b010001)):
+        qc.x(3)
+        qc.z(1)
+    with qc.if_test((csyn,0b010101)):
+        qc.x(4)
+        qc.z(1)
+    with qc.if_test((csyn,0b010011)):
+        qc.x(5)
+        qc.z(1)
+    with qc.if_test((csyn,0b010111)):
+        qc.x(6)
+        qc.z(1)
+    with qc.if_test((csyn,0b110000)):
+        qc.z(2)
+    with qc.if_test((csyn,0b110100)):
+        qc.x(0)
+        qc.z(2)
+    with qc.if_test((csyn,0b110010)):
+        qc.x(1)
+        qc.z(2)
+    with qc.if_test((csyn,0b110110)):
+        qc.x(2)
+        qc.z(2)
+    with qc.if_test((csyn,0b110001)):
+        qc.x(3)
+        qc.z(2)
+    with qc.if_test((csyn,0b110101)):
+        qc.x(4)
+        qc.z(2)
+    with qc.if_test((csyn,0b110011)):
+        qc.x(5)
+        qc.z(2)
+    with qc.if_test((csyn,0b110111)):
+        qc.x(6)
+        qc.z(2)
+    with qc.if_test((csyn,0b001000)):
+        qc.z(3)
+    with qc.if_test((csyn,0b001100)):
+        qc.x(0)
+        qc.z(3)
+    with qc.if_test((csyn,0b001010)):
+        qc.x(1)
+        qc.z(3)
+    with qc.if_test((csyn,0b001110)):
+        qc.x(2)
+        qc.z(3)
+    with qc.if_test((csyn,0b001001)):
+        qc.x(3)
+        qc.z(3)
+    with qc.if_test((csyn,0b001101)):
+        qc.x(4)
+        qc.z(3)
+    with qc.if_test((csyn,0b001011)):
+        qc.x(5)
+        qc.z(3)
+    with qc.if_test((csyn,0b001111)):
+        qc.x(6)
+        qc.z(3)
+    with qc.if_test((csyn,0b101000)):
+        qc.z(4)
+    with qc.if_test((csyn,0b101100)):
+        qc.x(0)
+        qc.z(4)
+    with qc.if_test((csyn,0b101010)):
+        qc.x(1)
+        qc.z(4)
+    with qc.if_test((csyn,0b101110)):
+        qc.x(2)
+        qc.z(4)
+    with qc.if_test((csyn,0b101001)):
+        qc.x(3)
+        qc.z(4)
+    with qc.if_test((csyn,0b101101)):
+        qc.x(4)
+        qc.z(4)
+    with qc.if_test((csyn,0b101011)):
+        qc.x(5)
+        qc.z(4)
+    with qc.if_test((csyn,0b101111)):
+        qc.x(6)
+        qc.z(4)
+    with qc.if_test((csyn,0b011000)):
+        qc.z(5)
+    with qc.if_test((csyn,0b011100)):
+        qc.x(0)
+        qc.z(5)
+    with qc.if_test((csyn,0b011010)):
+        qc.x(1)
+        qc.z(5)
+    with qc.if_test((csyn,0b011110)):
+        qc.x(2)
+        qc.z(5)
+    with qc.if_test((csyn,0b011001)):
+        qc.x(3)
+        qc.z(5)
+    with qc.if_test((csyn,0b011101)):
+        qc.x(4)
+        qc.z(5)
+    with qc.if_test((csyn,0b011011)):
+        qc.x(5)
+        qc.z(5)
+    with qc.if_test((csyn,0b011111)):
+        qc.x(6)
+        qc.z(5)
+    with qc.if_test((csyn,0b111000)):
+        qc.z(6)
+    with qc.if_test((csyn,0b111100)):
+        qc.x(0)
+        qc.z(6)
+    with qc.if_test((csyn,0b111010)):
+        qc.x(1)
+        qc.z(6)
+    with qc.if_test((csyn,0b111110)):
+        qc.x(2)
+        qc.z(6)
+    with qc.if_test((csyn,0b111001)):
+        qc.x(3)
+        qc.z(6)
+    with qc.if_test((csyn,0b111101)):
+        qc.x(4)
+        qc.z(6)
+    with qc.if_test((csyn,0b111011)):
+        qc.x(5)
+        qc.z(6)
+    with qc.if_test((csyn,0b111111)):
+        qc.x(6)
+        qc.z(6)
     
 def FT_EC(qc,q,syn,flag,csyn,cflag):
     # syn: |0> total 1
