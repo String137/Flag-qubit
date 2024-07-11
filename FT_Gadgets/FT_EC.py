@@ -95,49 +95,7 @@ def non_FT_EC(qc,q,syn,csyn):
     Unflagged_X_syn(qc,q,[3,4,5,6],syn,csyn[3])
     Unflagged_X_syn(qc,q,[1,2,5,6],syn,csyn[4])
     Unflagged_X_syn(qc,q,[0,2,4,6],syn,csyn[5])
-    
-    with qc.if_test((csyn,0b000100)):
-        qc.x(0)
-    with qc.if_test((csyn,0b000010)):
-        qc.x(1)
-    with qc.if_test((csyn,0b000110)):
-        qc.x(2)
-    with qc.if_test((csyn,0b000001)):
-        qc.x(3)
-    with qc.if_test((csyn,0b000101)):
-        qc.x(4)
-    with qc.if_test((csyn,0b000011)):
-        qc.x(5)
-    with qc.if_test((csyn,0b000111)):
-        qc.x(6)
-    with qc.if_test((csyn,0b100000)):
-        qc.z(0)
-    with qc.if_test((csyn,0b010000)):
-        qc.z(1)
-    with qc.if_test((csyn,0b110000)):
-        qc.z(2)
-    with qc.if_test((csyn,0b001000)):
-        qc.z(3)
-    with qc.if_test((csyn,0b101000)):
-        qc.z(4)
-    with qc.if_test((csyn,0b011000)):
-        qc.z(5)
-    with qc.if_test((csyn,0b111000)):
-        qc.z(6)
-    with qc.if_test((csyn,0b100100)):
-        qc.y(0)
-    with qc.if_test((csyn,0b010010)):
-        qc.y(1)
-    with qc.if_test((csyn,0b110110)):
-        qc.y(2)
-    with qc.if_test((csyn,0b001001)):
-        qc.y(3)
-    with qc.if_test((csyn,0b101101)):
-        qc.y(4)
-    with qc.if_test((csyn,0b011011)):
-        qc.y(5)
-    with qc.if_test((csyn,0b111111)):
-        qc.y(6)
+    image.png
     
 def FT_EC(qc,q,syn,flag,csyn,cflag):
     # syn: |0> total 1
